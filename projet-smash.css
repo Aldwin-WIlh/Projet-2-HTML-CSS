@@ -1,29 +1,55 @@
-.test {margin: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font: bold;
-    width: 50%;
-    padding: 10px;
-    color: coral;
- 
-}
 .button {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     background-size: cover;
-    transition: transform .5s;
+    transition: transform .7s;
 }
 
 .button:hover{
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
-.button{
+#image1 img{
+    width: 47%;
+    height: 47%;
+    position: absolute; 
+    top: 2%;
+    right: 2%;  
+}
+
+#image2 img{
+    width: 47%;
+    height: 47%;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    bottom: 2%;
+    right: 2%;
+}
+
+#image3 img{
+    width: 47%;
+    height: 47%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    
+}
+
+#image4 img{
+    width: 47%;
+    height: 47%;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    
+}
+
+#logo-centre img{
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    top: 20%;
+    left: 35%;
 }
 
 
