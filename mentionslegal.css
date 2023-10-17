@@ -1,5 +1,5 @@
 .bend {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,7 +7,37 @@
     background-color: black;
   }
 
-  .title{
-    position: sticky;
-    top: 0;
+  .titlebleu{
+    font: bold;
+    color: rgb(78, 101, 236);
+    position: fixed;
+    top: -2.5%;
+    right: 50%;
+    left: 50%;
+    
+  }
+  .titlevert{
+    font: bold;
+    color: rgb(115, 236, 78);
+    position: fixed;
+    top: -2.5%;
+    right: 50%;
+    left: 50%;
+  }
+  .titlerouge{
+    font: bold;
+    color: rgb(247, 0, 0);
+    position: fixed;
+    top: -2.5%;
+    right: 50%;
+    left: 50%;
+    
+  }
+  .titlejaune{
+    font: bold;
+    color: rgb(233, 210, 0);
+    position: fixed;
+    top: -2.5%;
+    right: 50%;
+    left: 50%;
   }
