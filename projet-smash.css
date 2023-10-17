@@ -1,4 +1,31 @@
-.test {padding-left: 50%;
-color: coral;
+.test {margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: bold;
+    width: 50%;
+    padding: 10px;
+    color: coral;
  
 }
+.button {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-size: cover;
+    transition: transform .5s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.button{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+@media screen and (max-width: 320px) { @viewport { width: 320px; } }
