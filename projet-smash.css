@@ -45,6 +45,7 @@
 }
 
 #logo-centre img{
+    cursor: pointer;
     position: absolute;
     height: 60%;
     width: 30%;
