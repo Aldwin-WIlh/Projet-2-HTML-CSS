@@ -1,16 +1,40 @@
-.button {
-    width: 100%;
-    height: 100%;
+@font-face {
+  font-family: smash;
+  src: url(police_smash.ttf);
+}
+
+.bdy{
+  position: absolute;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.fond{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fond img{
+  width: 100%;
+  height: 110%;
+}
+
+.button{
     cursor: pointer;
     background-size: cover;
     transition: transform .7s;
+    -webkit-filter: grayscale(40%);
+    filter: grayscale (40%)
 }
 
 .button:hover{
-    transform: scale(1.5);
+    transform: scale(1.07);
+    filter: grayscale(0%);
 }
 
-#image1 img{
+#image1{
     width: 47%;
     height: 47%;
     position: absolute; 
@@ -18,7 +42,7 @@
     right: 2%;  
 }
 
-#image2 img{
+#image2{
     width: 47%;
     height: 47%;
     position: absolute;
@@ -26,7 +50,7 @@
     right: 2%;
 }
 
-#image3 img{
+#image3{
     width: 47%;
     height: 47%;
     position: absolute;
@@ -35,7 +59,7 @@
     
 }
 
-#image4 img{
+#image4{
     width: 47%;
     height: 47%;
     position: absolute;
@@ -52,6 +76,46 @@
     top: 20%;
     left: 35%;
 }
+
+#image1 img{
+  width: 100%;
+  height: 100%;
+}
+
+#image2 img{
+  width: 100%;
+  height: 100%;
+}
+
+#image3 img{
+  width: 100%;
+  height: 100%;
+}
+
+#image4 img{
+  width: 100%;
+  height: 100%;
+}
+
+@greyscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale (100%)
+}
+
+.footer{
+  position: absolute;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+}
+.footer_gauche{
+  font-family: "Smash";
+  bottom: 0%;
+}
+
+
+
+
 
 .bend {
     position: fixed;
