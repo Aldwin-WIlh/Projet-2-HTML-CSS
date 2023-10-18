@@ -105,12 +105,16 @@
 .footer {
   position: absolute;
   bottom: -8%;
-  height: 5%;
-  background-color: #333; /* Dark gray background color */
-  color: #ccc; /* Light gray text color */
+  height: 15px;
+  background-color: #181818; /* Dark gray background color */
   padding: 10px;
   width: 100%;
-  
+  display: flex; /* Create a flex container */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+
 .footer_gauche{
   font-family: "Smash";
   bottom: 0%;
@@ -122,55 +126,61 @@
 
 .bend {
     position: fixed;
+    padding: 10px;
     top: 0;
     left: 0;
     width: 100%;
     height: 50px;
     background-color: black;
+    color: antiquewhite;
   }
   
   .titlebleu{
+    position: fixed;
     font: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(78, 101, 236);
     height: 1px;
     position: fixed;
-    top: -2.5%;
-    right: 50%;
+    top: -6px;
     left: 50%;
+    transform: translateX(-50%);
     
   }
   .titlevert{
+    position: fixed;
     font: bold;
     color: rgb(115, 236, 78);
     position: fixed;
-    top: -2.5%;
-    right: 50%;
+    top: -8px;
     left: 50%;
+    transform: translateX(-50%);
+  
+  
   }
-  .titlerouge{
-    font: bold;
+  .titlerouge {
+    font-weight: bold;
     color: rgb(247, 0, 0);
     position: fixed;
-    top: -2.5%;
-    right: 50%;
+    top: -8px;
     left: 50%;
-    
-  }
+    transform: translateX(-50%);
+}
+
   .titlejaune{
+    position: fixed;
     font: bold;
     color: rgb(233, 210, 0);
     position: fixed;
-    top: -2.5%;
-    right: 50%;
+    top: 0px;
     left: 50%;
+    transform: translateX(-50%);
   }
 
-
-}
 
 .legal-link {
     text-decoration: underline;
     cursor: pointer;
+    color: #595656; /* Light gray text color */
 }
 @media screen and (max-width: 320px) { @viewport { width: 320px; } }
