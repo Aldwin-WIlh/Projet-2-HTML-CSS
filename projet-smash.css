@@ -3,14 +3,36 @@
   src: url(police_smash.ttf);
 }
 
-.bdy{
-  position: absolute;
-  margin: 0%;
+/*fonctions generale*/
+body{
+  z-index: -100;
   width: 100%;
   height: 100%;
+  position: absolute;
+  margin: 0%;
 }
 
+footer {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 30px;
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@greyscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale (100%)
+}
+
+
+/*page principale*/
 .fond{
+  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -18,7 +40,7 @@
 
 .fond img{
   width: 100%;
-  height: 105%;
+  height: 100%;
 }
 
 .button{
@@ -97,45 +119,42 @@
   height: 100%;
 }
 
-@greyscale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale (100%)
-}
-
-footer {
-  position: absolute;
-  bottom: -8%;
-  left: -5%;
-  height: 15px;
-  background-color: #181818; /* Dark gray background color */
-  padding: 10px;
-  width: 110%;
-  display: flex; /* Create a flex container */
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
-}
-
-
-
-.footer_gauche{
-  font-family: "Smash";
-  bottom: 0%;
-}
-
-
-
-
-
 .bend {
-    position: fixed;
-    padding: 10px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    color: antiquewhite;
-  }
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: antiquewhite;
+}
+
+/*combattant*/
+.combattant {
+  background-color: rgb(8, 8, 3) ;
+
+}
+
+/*mentions-legal*/
+
+.mentions-legal{
+  top: 0%;
+  left: 0%;
+  background-color: rgb(79, 78, 78);
+}
+
+.mentions-legal-texte {
+  position: absolute;
+  top: 60px;
+  left: 0%;
+  font: oblique;
+  font-size: 30px;
+  color: rgb(6, 6, 6);
+  padding: 10px;
+}
+
+
   
   .titlebleu{
     position: fixed;
