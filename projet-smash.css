@@ -25,13 +25,13 @@
     cursor: pointer;
     background-size: cover;
     transition: transform .7s;
-    -webkit-filter: brightness(90%);
-    filter: brightness (90%)
+    -webkit-filter: grayscale(40%);
+    filter: grayscale (40%)
 }
 
 .button:hover{
     transform: scale(1.07);
-    filter: brightness(130%);
+    filter: grayscale(0%);
 }
 
 #image1{
@@ -102,29 +102,27 @@
   filter: grayscale (100%)
 }
 
-@brightness {
-  -webkit-filter: brightness(100%);
-  filter: brightness (100%)
-}
-
-
-.footer {
+footer {
   position: absolute;
-  font-family: "Smash";
-  left: 0%;
   bottom: -8%;
+  left: -5%;
   height: 15px;
   background-color: #181818; /* Dark gray background color */
   padding: 10px;
-  width: 100%;
+  width: 110%;
   display: flex; /* Create a flex container */
   justify-content: center; /* Horizontally center content */
   align-items: center; /* Vertically center content */
 }
 
-.footer :hover {
-  color: #cccccc; /* Light gray text color on hover */
- }
+
+
+.footer_gauche{
+  font-family: "Smash";
+  bottom: 0%;
+}
+
+
 
 
 
@@ -145,7 +143,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(78, 101, 236);
     height: 1px;
-    position: fixed;
+    padding: 10px;
     top: -6px;
     left: 50%;
     transform: translateX(-50%);
@@ -154,6 +152,7 @@
   .titlevert{
     position: fixed;
     font: bold;
+    padding: 10px;
     color: rgb(115, 236, 78);
     position: fixed;
     top: -8px;
@@ -164,6 +163,7 @@
   }
   .titlerouge {
     font-weight: bold;
+    padding: 10px;
     color: rgb(247, 0, 0);
     position: fixed;
     top: -8px;
@@ -173,6 +173,7 @@
 
   .titlejaune{
     position: fixed;
+    padding: 10px;
     font: bold;
     color: rgb(233, 210, 0);
     position: fixed;
