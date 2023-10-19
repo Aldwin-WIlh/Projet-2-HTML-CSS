@@ -25,13 +25,13 @@
     cursor: pointer;
     background-size: cover;
     transition: transform .7s;
-    -webkit-filter: grayscale(40%);
-    filter: grayscale (40%)
+    -webkit-filter: brightness(90%);
+    filter: brightness (90%)
 }
 
 .button:hover{
     transform: scale(1.07);
-    filter: grayscale(0%);
+    filter: brightness(130%);
 }
 
 #image1{
@@ -102,8 +102,16 @@
   filter: grayscale (100%)
 }
 
+@brightness {
+  -webkit-filter: brightness(100%);
+  filter: brightness (100%)
+}
+
+
 .footer {
   position: absolute;
+  font-family: "Smash";
+  left: 0%;
   bottom: -8%;
   height: 15px;
   background-color: #181818; /* Dark gray background color */
@@ -114,13 +122,9 @@
   align-items: center; /* Vertically center content */
 }
 
-
-.footer_gauche{
-  font-family: "Smash";
-  bottom: 0%;
-}
-
-
+.footer :hover {
+  color: #cccccc; /* Light gray text color on hover */
+ }
 
 
 
