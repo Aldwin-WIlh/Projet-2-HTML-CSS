@@ -4,6 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const resultText = document.getElementById("result");
 
     // Définissez les réponses correctes pour chaque question
+    const wrongAnswers = {
+        question1: ["Nous","Nintendo"],
+        question2: ["1899","1998"],
+        question3: ["Thanos","Sonic"],
+        question4: ["Mario","Kirby"],
+        question5: ["50","38"],
+        question6: ["Pichu","Pikachu"],
+        question7: ["Marie","Ryu"],
+        question8: ["79%","100%"],
+        question9: ["4","9"],
+        question10: ["Nintendo 64","Nintendo Wii"],
+        // Ajoutez les réponses correctes pour les autres questions ici
+    };
+
     const correctAnswers = {
         question1: "Sakurai",
         question2: "1999",
