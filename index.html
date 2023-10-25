@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Un questionnaire à choix multiples">
+    <title>Questionnaire à choix multiples</title>
+    <link rel="stylesheet" type="text/css" href="projet-smash.css">
+</head>
+<body>
+    <h1>Questionnaire à choix multiples</h1>
+    
+    <form id="quiz-form">
+        <div class="question">
+            <label for="question1">Question 1: Qui est le créateur du jeu?</label>
+            <input type="radio" name="question1" value="Sakurai">  Masahiro Sakurai  <!-- Le sachiez vous? Masahiro Sakurai est aussi le Papa de Kirby, un des personnage emblématique du jeu! -->
+            <input type="radio" name="question1" value="Nous"> Nous <!-- Nous somme indépendant du jeu et somme simplement des fans qui avons décider de créer ce site en hommage à la license! -->
+            <input type="radio" name="question1" value="Nintendo"> Nintendo <!-- Nintendo est l'entreprise qui a concu les console sur lesquels le jeu jouable! -->
+        </div>
+        
+        <div class="question">
+            <label for="question2">Question 2: En quelle année a été crée le premier Super Smash bros?</label>
+            <input type="radio" name="question2" value="1899"> 1899
+            <input type="radio" name="question2" value="1998"> 1998
+            <input type="radio" name="question2" value="1999">  1999
+        </div>
+        <div class="question">
+            <label for="question3">Question 3: Lequel de ces personnages apparait dans le premier Super Smash bros (Super Smash bros 64)?</label>
+            <input type="radio" name="question3" value="Thanos"> Thanos
+            <input type="radio" name="question3" value="Link"> Link
+            <input type="radio" name="question3" value="Sonic"> Sonic
+        </div>
+        
+        <div class="question">
+            <label for="question4">Question 4: Lequel de ces personages n'apparait pas dans la License?</label>
+            <input type="radio" name="question4" value="Mario"> Mario
+            <input type="radio" name="question4" value="Kirby"> Kirby
+            <input type="radio" name="question4" value="Félinferno"> Félinferno
+        </div>
+        <div class="question">
+            <label for="question5">Question 5: Combien de personnages y a-t-il dans le dernier opus ?</label>
+            <input type="radio" name="question5" value="74"> 74
+            <input type="radio" name="question5" value="50"> 50
+            <input type="radio" name="question5" value="38"> 38
+        </div>
+        
+        <div class="question">
+            <label for="question6">Question 6: Quel est le seul pokemon légendaire dans le jeu,</label>
+            <input type="radio" name="question6" value="Pichu"> Pichu
+            <input type="radio" name="question6" value="Pikachu"> Pikachu
+            <input type="radio" name="question6" value="Mewtwo"> Mewtwo
+        </div>
+        <div class="question">
+            <label for="question7">Question 7: Lequel de ces personnages ressemble à crocodile?</label>
+            <input type="radio" name="question7" value="King K Rool"> King K Rool
+            <input type="radio" name="question7" value="Marie"> Marie
+            <input type="radio" name="question7" value="Ryu"> Ryu
+        </div>
+        
+        <div class="question">
+            <label for="question8">Question 8: Lequel de ces pourcentages est le plus favorable pour rester en vie?</label>
+            <input type="radio" name="question8" value="79%"> 79%
+            <input type="radio" name="question8" value="100%"> 100%
+            <input type="radio" name="question8" value="34%"> 34%
+        </div>
+        <div class="question">
+            <label for="question9">Question 9: Combiens de jeux Super Smash Bro sont sortis?</label>
+            <input type="radio" name="question9" value="4"> 4
+            <input type="radio" name="question9" value="9"> 9
+            <input type="radio" name="question9" value="6"> 6
+        </div>
+        
+        <div class="question">
+            <label for="question10">Question 10: Sur quel plateforme est sortie le dernier jeu de la license?</label>
+            <input type="radio" name="question10" value="Nintendo Switch"> Nintendo Switch
+            <input type="radio" name="question10" value="Nintendo 64"> Nintendo 64
+            <input type="radio" name="question10" value="Nintendo Wii"> Nintendo Wii
+
+        <button type="button" id="submit-button">Valider</button>  <!--Individualiser pour chaque question-> transition prochaine questions-->
+        <button type="button" id="recommencer">Recommencer</button> <!--Todo: Recommence le Quiz-->
+        <button type="button" id="next">Question suivante</button> <!--Todo: Recommence le Quiz-->
+    </form>
+    
+    <p id="result"></p>
+    
+    <script src="main.js"></script>
+</body>
+</html>
