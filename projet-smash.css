@@ -171,7 +171,7 @@ footer {
 }
 
 .question img{
-  
+
 }
 
 .reponses{
@@ -334,3 +334,7 @@ footer {
     color: #595656; /* Light gray text color */
 }
 @media screen and (max-width: 320px) { @viewport { width: 320px; } }
+
+.score{
+  background-color: rgb(230, 250,166);
+}
