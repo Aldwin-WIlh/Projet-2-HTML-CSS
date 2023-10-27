@@ -35,13 +35,13 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
   background-color: black;
   color: antiquewhite;
+  display: flex;
 }
 
 .bend img{
-  width: 5%;
+  width: 10%;
 }
 
 .title{
@@ -53,10 +53,6 @@ footer {
   top: -8px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.red{
-  background-color: rgb(226, 157, 157) ;
 }
 
 @greyscale {
@@ -81,7 +77,6 @@ footer {
   width: 100%;
   height: 100%;
 }
-
 
 .button{
     cursor: pointer;
@@ -166,106 +161,89 @@ footer {
   height: 150%;
   margin: 0%;
   background-image: url("images/imagevert.png");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
-.start{
-  z-index: -1;
+#quizz{
   position: absolute;
-  top: 15%;
+  width: 70%;
+  top: 20%;
+  left: 15%;
+  height: 120%;
 }
-  
-  .question{
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    height: 42%;
-    width: 50%;
-  }
-  
-  .question img{
-    position: absolute;
-    width: 100%;
-  }
-  
-  .questiontxt{
-    z-index: -1;
-    font-size: 125%;
-    padding-top: 12%;
-    text-align: center;
-  }
 
-.reponses{
+#next {
   position: absolute;
-  width: 60%;
-  height: 27%;
-  top: 60%;
-  left: 20%;
-  padding: 0%;
+  top: 40%;
+  left: 44.5%;
 }
 
-.reponseA{
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 45%;
-}
-
-.reponseB{
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  width: 45%;
-}
-
-.reponseC{
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
-  width: 45%;
-}
-
-.reponseD{
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  width: 45%;
-}
-
-.reponseA img{
-  position: absolute;
-  width: 100%;
-}
-
-.reponseB img{
-  position: absolute;
-  width: 100%;
-}
-
-.reponseC img{
-  position: absolute;
-  width: 100%;
-}
-
-.reponseD img{
-  position: absolute;
-  width: 100%;
-}
-
-.reptxt{
-  padding-top: 10%;
+#start{
   text-align: center;
-  font-size: 70%;
+  font-size: 3vw;
+  width: 40%;
+  margin: 0% 30%;
+  height: 5%;
+  padding: 5% 0%;
+  border: solid 10px rgb(245, 151, 56);
+  border-radius: 10px;
+}
+
+#question{
+  width: 100%;
+  text-align: center;
+}
+
+#question img{
+  z-index: -1;
+  top: -3.5%;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+}
+#pquestion{
+  width: 40%;
+  text-align: center;
+  padding-bottom: 25%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+#reponses{
+  text-align: center;
+  display: flex;
+  width: 100%;
+  font-size: 1.5vw;
+  top: 50%;
+}
+
+#reponses p{
+  top: 20%;
+  width: 50%;
+  margin: 0px 10px;
+  padding:3% 0px;
+  border: solid 3px rgb(245, 151, 56);
+  border-radius: 10px;
+}
+
+#reponses p:hover{
+  transform: scale(0.95);
+  background-color: aliceblue;
+}
+
+
+#mainbox{
+  height: 130%;
 }
 
 /*combattant*/
 .Combatants {
   background-image: url("images/imagejaune.png");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .persoul{
@@ -292,7 +270,16 @@ footer {
   height: 20%;
   padding-left: 2%;
   float: left;
-  color: rgb(250, 250, 166);
+  color: rgb(0, 0, 0);
+}
+
+.transparent{
+  -webkit-filter: opacity(10%);
+  filter: opacity(10%);
+}
+
+.transparent :hover{
+  filter: opacity(100%);
 }
 
 .persodiv img{  
@@ -300,10 +287,6 @@ footer {
   filter: grayscale(100%);
   width: 103%;
   height: 103%;
-}
-
-.persodiv:hover{
-  color: #181818;
 }
 
 .persodiv img:hover{
@@ -330,14 +313,13 @@ footer {
 
 /*histoire*/
 .histoire{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/imagebleu.png");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-  
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/imagebleu.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .histdiv{
@@ -354,9 +336,9 @@ footer {
 /*comment jouer*/
 .commentjouer{
   background-image: url("images/imagerouge.png");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .commentdiv{
@@ -371,6 +353,10 @@ footer {
 }
 
 /* a propos de nous*/
+
+.propos-de-nous{
+  background-color: rgb(110, 155, 51);
+}
 
 .aldwin{
   position: absolute;
@@ -392,7 +378,3 @@ footer {
     color: #595656; /* Light gray text color */
 }
 @media screen and (max-width: 320px) { @viewport { width: 320px; } }
-
-.score{
-  background-color: rgb(230, 250,166);
-}
