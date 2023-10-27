@@ -230,9 +230,8 @@ footer {
 
 #reponses p:hover{
   transform: scale(0.95);
-  background-color: aliceblue;
+  background-color: rgb(6, 139, 255);
 }
-
 
 #mainbox{
   height: 130%;
