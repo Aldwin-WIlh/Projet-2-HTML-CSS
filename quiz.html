@@ -5,8 +5,10 @@
 <html lang="fr">
   <head>
     <title>Quiz</title>
+    <script type="text/javascript" src="projet-smash.js"></script>
     <div class="bend">
       <img src="images/logo_smash.png" alt="Home Icon" onclick="location.href='index.html';">
+      <img src="images/restart.png" alt="restart" onclick="location.href='quiz.html';">
     </div>
     <div class="title">
       <img src="images/quiz.png" alt="texte a propos de nous">
@@ -14,9 +16,10 @@
   </head>
 
   <body class="quiz">
-    <p id = "start" onclick=ChangeQuestion()>lancer le quiz</p>
+    <div id="quizz">
+      <p id = "start" onclick=ChangeQuestion()>lancer le quiz</p>
+    </div>
     <footer>
       <a href="mentionslegal.html" class="legal-link">Mentions legales</a>
     </footer>
-    <script type="text/javascript" src="projet-smash.js"></script>
   </body>
