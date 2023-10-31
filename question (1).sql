@@ -5,15 +5,20 @@ CREATE TABLE question (
 
 CREATE TABLE bonnerep (
   id INTEGER PRIMARY KEY NOT NULL,
+  idquest INTEGER NOT NULL,
+  idfeed INTEGER NOT NULL,
   rep TEXT NOT NULL
   FOREIGN KEY(idquest) REFERENCES question(id)
+  FOREIGN KEY(idfeed) REFERENCES goodfeedback(id)
 ); 
 
 CREATE TABLE badrep (
   id INTEGER PRIMARY KEY NOT NULL,
   idquest INTEGER NOT NULL,
+  idfeed INTEGER NOT NULL,
   rep TEXT NOT NULL,
   FOREIGN KEY(idquest) REFERENCES question(id)
+  FOREIGN KEY(idfeed) REFERENCES badfeedback(id)
 ); 
 
 CREATE TABLE goodfeedback (
@@ -46,15 +51,15 @@ INSERT INTO question (id, enoncer) VALUES
 (12, 'Quel personnage utilise le célèbre ‘PK Fire’ ?');
 
 INSERT INTO bonnerep (id,idquest, rep) VALUES
-(1,1, 'Masahiro Sakurai'),
-(2,2, '1999'),
-(3,3, 'Pikachu'),
-(4,4, 'Waluigi'),
-(5,5, '82'),
-(6,6, 'EVO'),
-(7,7, 'Donkey Kong'),
-(8,8, 'Mewtwo'),
-(9,9, 'King K Rool'),
+(1,1,1, 'Masahiro Sakurai'),
+(2,2,2, '1999'),
+(3,3,3, 'Pikachu'),
+(4,4,4, 'Waluigi'),
+(5,5,5, '82'),
+(6,6,6, 'EVO'),
+(7,7,7 'Donkey Kong'),
+(8,8,8, 'Mewtwo'),
+(9,9,9 'King K Rool'),
 (10,10, 'Zelda et Sheik'),
 (11,11, 'Captain Falcon'),
 (12,12, 'Ness');
