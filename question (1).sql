@@ -41,6 +41,16 @@ CREATE TABLE score (
   FOREIGN KEY(id_utilisateur) REFERENCES users(id)
 );
 
+CREATE TABLE leaderboard (
+  place INT PRIMARY KEY NOT NULL,
+  nom varchar(35)
+  iduser INT, 
+  score INT
+  FOREIGN KEY(iduser) REFERENCES users(id)
+  FOREIGN KEY(score) REFERENCES score(point)
+  FOREIGN KEY(nom) REFERENCES users(prénom)
+);
+
 INSERT INTO question (id, enoncer) VALUES
 (1, 'Qui est le créateur du jeu ?'),
 (2, 'En quelle année a été créé le premier Smash Bros ?'),
