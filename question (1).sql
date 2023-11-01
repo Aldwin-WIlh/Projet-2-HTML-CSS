@@ -65,7 +65,7 @@ INSERT INTO question (id, enoncer) VALUES
 (11, 'Quel personnage ci-dessous vient d’un jeu de course ?'),
 (12, 'Quel personnage utilise le célèbre ‘PK Fire’ ?');
 
-INSERT INTO unifiedrep (id, idquest, rep, resultat) VALUES
+INSERT INTO rep (id, idquest, rep, resultat) VALUES
 (1, 1, 'Masahiro Sakurai', TRUE),
 (2, 2, '1999', TRUE),
 (3, 3, 'Pikachu', TRUE),
