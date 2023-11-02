@@ -2,10 +2,10 @@
     SELECT enoncer FROM question
 
   <!-- Supprimer une question -->
-    DELETE  FROM 
+    DELETE FROM questions WHERE id="id de la question"
 
   <!-- Modifier une question -->
-    UPDATE question SET enoncer = "Nv question" WHERE 
+    UPDATE question SET enoncer = "Nv question" WHERE id="id de la question"
 
 
   <!-- Récupérer un utilisateur -->
@@ -17,7 +17,7 @@
    
 
   <!-- Ajouter une question -->
-    INSERT INTO question VALUES 
+    INSERT INTO question VALUES ("id","enoncer")
 
   <!-- Ajouter un utilisateur -->
     INSERT INTO users VALUES
