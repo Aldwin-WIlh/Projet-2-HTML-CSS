@@ -21,7 +21,6 @@ CREATE TABLE feedback (
     bad_feedback VARCHAR(255)
 );
 
-
 CREATE TABLE autheurs (
   id INT PRIMARY KEY NOT NULL,
   Prénom VARCHAR(15) NOT NULL,
@@ -30,8 +29,7 @@ CREATE TABLE autheurs (
 
 CREATE TABLE users (
   id INT PRIMARY KEY NOT NULL,
-  Prénom VARCHAR(15) NOT NULL,
-  Nom VARCHAR(15) NOT NULL
+  Pseudo VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE score (
@@ -48,7 +46,7 @@ CREATE TABLE leaderboard (
   score INT
   FOREIGN KEY(iduser) REFERENCES users(id)
   FOREIGN KEY(score) REFERENCES score(point)
-  FOREIGN KEY(nom) REFERENCES users(prénom)
+  FOREIGN KEY(nom) REFERENCES users(pseudo)
 );
 
 INSERT INTO question (id, enoncer) VALUES
