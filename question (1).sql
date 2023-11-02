@@ -3,23 +3,22 @@ CREATE TABLE question (
   enoncer TEXT NOT NULL
 ); 
 
-CREATE TABLE rep (
-  id INTEGER PRIMARY KEY NOT NULL,
-  idquest INTEGER NOT NULL,
-  idfeed INTEGER NOT NULL,
-  rep VARCHAR(255) NOT NULL,
-  resultat BOOLEAN NOT NULL
-  FOREIGN KEY(idquest) REFERENCES question(id)
-  FOREIGN KEY(idquest) REFERENCES feedback(id)
-); 
-
-
-
 CREATE TABLE feedback (
     id INT PRIMARY KEY,
     good_feedback VARCHAR(255),
     bad_feedback VARCHAR(255)
 );
+
+
+CREATE TABLE rep (
+  id INTEGER PRIMARY KEY NOT NULL,
+  idquest INTEGER NOT NULL,
+  idfeed INTEGER NOT NULL,
+  rep VARCHAR(255) NOT NULL,
+  resultat BOOLEAN NOT NULL,
+  FOREIGN KEY(idquest) REFERENCES question(id)
+); 
+
 
 CREATE TABLE autheurs (
   id INT PRIMARY KEY NOT NULL,
@@ -29,24 +28,22 @@ CREATE TABLE autheurs (
 
 CREATE TABLE users (
   id INT PRIMARY KEY NOT NULL,
-  Pseudo VARCHAR(30) NOT NULL
+  pseudo VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE score (
   id INT PRIMARY KEY NOT NULL,
   id_utilisateur INT NOT NULL,
-  point INT CHECK (columl_name BETWEEN 0 AND 12)
+  point INT CHECK (point BETWEEN 0 AND 12),
   FOREIGN KEY(id_utilisateur) REFERENCES users(id)
 );
 
 CREATE TABLE leaderboard (
   place INT PRIMARY KEY NOT NULL,
-  nom varchar(35)
+  nom varchar(35),
   iduser INT, 
-  score INT
+  score INT,
   FOREIGN KEY(iduser) REFERENCES users(id)
-  FOREIGN KEY(score) REFERENCES score(point)
-  FOREIGN KEY(nom) REFERENCES users(pseudo)
 );
 
 INSERT INTO question (id, enoncer) VALUES
@@ -85,33 +82,33 @@ INSERT INTO rep (id, idquest, rep, resultat) VALUES
 (19, 3,'sonic', FALSE),
 (20, 3,'bowser', FALSE),
 (21 ,3 ,'zelda' ,FALSE ),
-(10,4, 'snake',FALSE),
-(11,4, 'marth',FALSE),
-(12,4, 'cloud',FALSE),
-(13,5, '61',FALSE),
-(14,5, '53',FALSE),
-(15,5, '56',FALSE),
-(16,6, 'le Pound',FALSE),
-(17,6, 'genesis',FALSE),
-(18,6, 'smash summit',FALSE),
-(19,7, 'luigi',FALSE),
-(20,7, 'roi dadidou',FALSE),
-(21,7, 'peach',FALSE),
-(22,8, 'pikachu',FALSE),
-(23,8, 'kyurem',FALSE),
-(24,8, 'amphinobi',FALSE),
-(25,9, 'falco',FALSE),
-(26,9, 'corin',FALSE),
-(27,9, 'ganondorf',FALSE),
-(28,10, 'peach et daisy',FALSE),
-(29,10, 'link et link enfant',FALSE),
-(30,10, 'mario et luigi',FALSE),
-(31,11, 'mario',FALSE),
-(32,11, 'samus',FALSE),
-(33,11, 'chrom',FALSE),
-(34,12, 'lucas',FALSE),
-(35,12, 'bowser',FALSE),
-(36,12, 'felinferno',FALSE);
+(22,4, 'snake',FALSE),
+(23,4, 'marth',FALSE),
+(24,4, 'cloud',FALSE),
+(25,5, '61',FALSE),
+(26,5, '53',FALSE),
+(27,5, '56',FALSE),
+(28,6, 'le Pound',FALSE),
+(29,6, 'genesis',FALSE),
+(30 ,6 ,'smash summit' ,FALSE ),
+(31 ,7 ,'luigi' ,FALSE ),
+(32 ,7 ,'roi dadidou' ,FALSE ),
+(33 ,7 ,'peach' ,FALSE ),
+(34 ,8 ,'pikachu' ,FALSE ),
+(35 ,8 ,'kyurem' ,FALSE ),
+(36 ,8 ,'amphinobi' ,FALSE ),
+(37 ,9 ,'falco' ,FALSE ),
+(38 ,9 ,'corin' ,FALSE ),
+(39 ,9 ,'ganondorf' ,FALSE ),
+(40 ,10 ,'peach et daisy' ,FALSE ),
+(41 ,10 ,'link et link enfant' ,FALSE ),
+(42 ,10 ,'mario et luigi' ,FALSE ),
+(43 ,11 ,'mario' ,FALSE ),
+(44 ,11 ,'samus' ,FALSE ),
+(45 ,11 ,'chrom' ,FALSE ),
+(46 ,12 ,'lucas' ,FALSE ),
+(47 ,12 ,'bowser' ,FALSE ),
+(48 ,12 ,'felinferno' ,FALSE );
 
 INSERT INTO feedback (id, good_feedback, bad_feedback) VALUES
 (1, "bonne reponse le createur de super smash bros est bien Masahiro Sakurai", "le créateur est Masahiro Sakurai"),
@@ -126,6 +123,8 @@ INSERT INTO feedback (id, good_feedback, bad_feedback) VALUES
 (10, "C'est seulement depuis le précédent opus que Zelda et Cheik sont deux personnage distinct", "non ces deux personnages ont toujours été deux personnages jouables séparément"),
 (11, "c est du jeux peu connue F-zero que viens captain falcon", "le personnage dont la première apparition vient d'un jeu de courses est captain falcon"),
 (12, "l attaque pk fire qui a fait rager de nombreuses personnes sur le online est une attaque de ness", "non cette attaque quelque peut agaçant viens du personnage de ness");
+
+
 
 
 
