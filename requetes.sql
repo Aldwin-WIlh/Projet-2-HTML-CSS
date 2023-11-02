@@ -5,7 +5,7 @@
     DELETE  FROM 
 
   <!-- Modifier une question -->
-    UPDATE question SET 
+    UPDATE question SET enoncer = "Nv question" WHERE 
 
 
   <!-- Récupérer un utilisateur -->
