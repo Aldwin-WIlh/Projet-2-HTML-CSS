@@ -9,7 +9,7 @@
 
 
   <!-- Récupérer un utilisateur ayant le score maximum -->
-    SELECT users.pseudo FROM score,users WHERE score.points=10 AND score.id_utilisateur=users.id
+    SELECT users.pseudo FROM score,users WHERE score.point=10 AND score.id_utilisateur=users.id
 
 
   <!-- Récupérer les scores des utilisateurs -->
