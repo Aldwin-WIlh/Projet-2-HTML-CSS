@@ -8,12 +8,12 @@
     UPDATE question SET enoncer = "Nv question" WHERE id="id de la question"
 
 
-  <!-- Récupérer un utilisateur -->
-    SELECT 
+  <!-- Récupérer un utilisateur ayant le score maximum -->
+    SELECT users.pseudo FROM score,users WHERE score.points=10 AND score.id_utilisateur=users.id
 
 
   <!-- Récupérer les scores des utilisateurs -->
-    SELECT 
+    SELECT * FROM score
    
 
   <!-- Ajouter une question -->
