@@ -20,7 +20,7 @@
     INSERT INTO question VALUES ("id","enoncer")
 
   <!-- Ajouter un utilisateur -->
-    INSERT INTO users VALUES
+    INSERT INTO users VALUES ("id","pseudo")
 
   <!-- Ajouter un auteur -->
-    INSERT INTO autheurs VALUES 
+    INSERT INTO autheurs VALUES ("id,"Prénom","Nom")
