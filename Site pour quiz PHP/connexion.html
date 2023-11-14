@@ -13,20 +13,39 @@
         </a>
         <div class="buttons-container">
             <button class="header-button" onclick="window.location.href='index.html'">Accueil</button>
-            <button class="header-button" onclick="window.location.href='quiz.html'">Quiz</button>
-            <button class="header-button" onclick="window.location.href='index.html'">Connexion</button>
         </div>
     </div></div>
-    <div class="quiz-container">
-        <h1>Question 1</h1>
-        <div class="options">
-            <label><input type="radio" name="q1" value="option1"> Option 1</label>
-            <label><input type="radio" name="q1" value="option2"> Option 2</label>
-            <label><input type="radio" name="q1" value="option3"> Option 3</label>
-            <label><input type="radio" name="q1" value="option4"> Option 4</label>
-        </div>
-        <!-- Ajoutez des questions et des options supplémentaires au besoin -->
-        <button id="nextButton">Suivant</button>
+    <div class= "connexion-box">
+        <b>
+            <h2>Connexion</h2>
+            <form action="connexion.php" method="post">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label></label>
+    
+                <label for="password">Mot de passe :</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required> 
+    
+                <label> <a href="motdepasseoublie.html">Mot de passe oublié ?</a></label>
+                <input type="checkbox" id="showPassword" onclick="togglePassword()"> Afficher le mot de passe                        
+                <label><button type="submit">Connexion</button></label>
+            </form>
+    
+            <p>Vous n'avez pas de compte ? <a href="inscription.html">Inscription</a></p>
+        
     </div>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var showPasswordCheckbox = document.getElementById("showPassword");
+
+            if (showPasswordCheckbox.checked) {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>

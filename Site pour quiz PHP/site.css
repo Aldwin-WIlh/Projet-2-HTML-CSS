@@ -1,24 +1,53 @@
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #8B0000, #000000);
+    background: linear-gradient(to left, #9c0000, #2e0000);
 }
+
+.header {
+    z-index: 2;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, rgb(31, 7, 7), #000000);
+    margin-top: -5vw;
+}
+
+
+.quiz-container {
+    width: 30%;
+    margin-top: 3vw;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #8B0000, #2e0000);
+}
+
 .body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #8B0000, #000000);
 }
 
-.header {
-    height: 50px;
-    border-bottom: 2px solid #750a0a; /* Rouge sang */
-    position: fixed;
-    width: 100%;
-    background: linear-gradient(to right, rgb(31, 7, 7), #000000); /* Dégradé rouge sang à noir */
-    margin-top: -2px;
+
+
+
+.connexion-box {
+    width: 40%;
+    border: 3px solid #000000;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5vw;
+    padding: 10px;
 }
+
+a:link {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    }
 
 .logo-container {
     display: flex;
@@ -28,8 +57,8 @@ body {
 }
 
 .logo {
-    max-height: 100%; /* Le logo prendra 100% de la hauteur disponible */
-    max-width: 100%;  /* Le logo prendra 100% de la largeur disponible */
+    max-height: 100%; 
+    max-width: 100%;  
 }
 
 .buttons-container {
@@ -51,15 +80,8 @@ body {
 }
 
 
-.quiz-container {
-    text-align: center;
-    margin-top: 60px; /* Hauteur de la barre fixe + espacement */
-    padding: 20px;
-    background: linear-gradient(to right, #8B0000, #000000);
-}
-
 h1 {
-    color: #000000; /* Rouge sang */
+    color: #000000;
 }
 
 .options {
@@ -72,7 +94,7 @@ label {
 }
 
 button {
-    background-color: #8B0000; /* Rouge sang */
+    background-color: #8B0000; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -80,5 +102,5 @@ button {
 }
 
 button:hover {
-    background-color: #5A0000; /* Rouge sang plus sombre pour l'effet hover */
+    background-color: #5A0000; 
 }
