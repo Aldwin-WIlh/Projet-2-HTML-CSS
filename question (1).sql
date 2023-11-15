@@ -1,10 +1,10 @@
 CREATE TABLE question (
-  id INTEGER PRIMARY KEY NOT NULL,
+  ID INTEGER PRIMARY KEY NOT NULL,
   enoncer TEXT NOT NULL
 ); 
 
 CREATE TABLE feedback (
-    id INT PRIMARY KEY,
+    ID INT PRIMARY KEY,
     good_feedback VARCHAR(255),
     bad_feedback VARCHAR(255)
 );
@@ -21,7 +21,7 @@ CREATE TABLE rep (
 
 
 CREATE TABLE login (
-  id INT PRIMARY KEY NOT NULL,
+  ID INT PRIMARY KEY NOT NULL,
   login VARCHAR(255) NOT NULL,
   mdp VARCHAR(255) NOT NULL
 );
@@ -35,7 +35,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE score (
-  id INT PRIMARY KEY NOT NULL,
+  ID INT PRIMARY KEY NOT NULL,
   id_utilisateur INT NOT NULL,
   point INT CHECK (point BETWEEN 0 AND 12),
   FOREIGN KEY(id_utilisateur) REFERENCES users(id)
@@ -49,6 +49,18 @@ CREATE TABLE leaderboard (
   FOREIGN KEY(iduser) REFERENCES users(id)
 );
 
+// création de la table token
+CREATE TABLE reset_tokens (
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  users_id INT,
+  token VARCHAR(255),
+  expiration TIMESTAMP
+);
+//ajout clé etrangère sur users_id
+  ALTER TABLE reset_tokens
+  ADD CONSTRAINT FK_TokenUser
+  FOREIGN KEY (user_id) REFERENCES users(ID) ON DELETE CASCADE;
+  
 INSERT INTO question (id, enoncer) VALUES
 (1, 'Qui est le créateur du jeu ?'),
 (2, 'En quelle année a été créé le premier Smash Bros ?'),
