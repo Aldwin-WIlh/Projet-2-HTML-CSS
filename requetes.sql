@@ -24,3 +24,9 @@
 
   <!-- Ajouter un auteur -->
     INSERT INTO autheurs VALUES ("id,"Prénom","Nom")
+
+  <!-- Afficher le Top 10 du leaderboard -->
+    SELECT users.username AS nom, score.point FROM users
+    JOIN score ON users.id = score.id_utilisateur
+    ORDER BY score.point DESC
+    LIMIT 10;
