@@ -15,6 +15,14 @@ body {
     margin-top: -5vw;
 }
 
+.header_accueil {
+    z-index: 2;
+    height: 7vw;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, rgb(31, 7, 7), #000000);
+    margin-top: -5vw;
+}
 
 .quiz-container {
     width: 30%;
@@ -40,6 +48,14 @@ body {
     margin: auto;
     border-radius: 10px;
     margin-top: 5vw;
+    padding: 10px;
+}
+
+.connexion-box2 {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10vw;
     padding: 10px;
 }
 
@@ -99,6 +115,21 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+.button-mainlogin {
+    width: 50vw;
+    height: 25vw;
+    color: #000000; /* Set your desired text color */
+    font-size: 7vw; /* Set your desired font size */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid #000000;
+    border-radius: 10vw;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button-mainlogin:hover {
+    background-color: #5A0000; 
 }
 
 button:hover {
