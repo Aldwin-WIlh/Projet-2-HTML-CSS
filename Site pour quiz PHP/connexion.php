@@ -4,9 +4,8 @@ session_start();
 // Vérifier si le formulaire de connexion a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les informations d'identification depuis le formulaire
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
+    $email = "no";
+    $password ="pfr";
     // Ici, vous devrez vous connecter à votre base de données et vérifier les informations d'identification
     // Remplacez les lignes ci-dessous par votre logique de connexion à la base de données
     $servername = "votre_serveur";
